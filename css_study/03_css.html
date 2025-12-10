@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS 자식 선택자</title>
+        <style>
+            #container {
+                border: 1px solid black;
+                padding: 20px;
+                /* 5px 10px 좌우 5px 위아래 10px이 적용된다. 
+                5px 10px 20px 40px는 위, 오른쪽, 아래, 왼쪽 순이다. */
+                border-radius: 15px;
+            }
+            #container > p > span {
+                font-size: 18px;
+                color: orange;
+            }
+
+            /* container안에 태그 골라서  */
+            #container > p:nth-child(2) {
+                border: 1px solid black;
+            }
+            #container > p:nth-child(3),
+            p:nth-child(4) {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>자식 선택자</h3>
+        <div id="container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Nihil commodi, sequi non odit,</span> obcaecati similique officia culpa fugit
+                libero magnam eligendi harum veniam, a porro dolor optio distinctio. Modi, debitis.
+            </p>
+            <p>
+                Lorem ipsum dolor,<span> Vel doloribus voluptatem </span>nesciunt fuga unde quaerat delectus deleniti aliquam sunt natus, fugit illum mollitia
+                tempora, maxime tempore non facilis. Aliquam, alias!
+            </p>
+            <p>
+                <span>
+                    ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolorem sed quas. Fugiat culpa ipsum consequatur eaque nobis quos necessitatibus
+                    beatae nihil</span
+                >
+                dolores nisi corrupti inventore, doloremque ducimus magni harum.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus vel dolores dolore sequi eos neque dignissimos incidunt doloremque autem
+                voluptate. Dolores ea quo quam sint nemo, fugit cupiditate iste saepe?
+            </p>
+        </div>
+    </body>
+</html>

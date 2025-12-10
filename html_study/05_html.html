@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>테이블</title>
+
+        <!-- CSS -->
+        <style>
+            table,
+            th,
+            td {
+                /* border는 테두리를 의미,  */
+                border: 1px solid blue;
+                /* 겹치는 곳을 하나로 합칩 */
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                /* padding: 안쪽 여백, margim: 바깥 여백 */
+                padding: 8px;
+                /* 텍스트 정렬 */
+                text-align: center;
+            }
+            th {
+                /* 배경색 */
+                background-color: #dbdbdb;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>테이블 만들기</h1>
+        <table>
+            <caption>
+                국비과정 학생 정보
+            </caption>
+            <thead>
+                <tr>
+                    <!-- tr: table row -->
+                     <!-- thead안에 th는 폰트가 굵게 들어간다. -->
+                    <th>이름</th>
+                    <th>나이</th>
+                    <th>지역</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>김</td>
+                    <td>0</td>
+                    <td>울산</td>
+                </tr>
+                <tr>
+                    <td>영</td>
+                    <td>2</td>
+                    <td>울</td>
+                </tr>
+                <tr>
+                    <td>환</td>
+                    <td>9</td>
+                    <td>산</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>총 학생 수</td>
+                    <td>3명</td>
+                    <td>-</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <hr>
+
+        <table>
+            <caption> 월별 판매 실적 </caption>
+            
+            <thead>
+                    <th>월</th>
+                    <th>판매량</th>
+                <tbody>
+                <tr>
+                    <td>1월</td>
+                    <td>100개</td>
+                </tr>
+                <tr>
+                    <td>2월</td>
+                    <td>200개</td>
+                </tr>
+                <tr>
+                    <td>3월</td>
+                    <td>300개</td>
+                </tr>
+                <tr>
+                    <td>4월</td>
+                    <td>400개</td>
+                </tr>
+            </tbody>
+             <tfoot>
+                <tr>
+                    <td>총 판매량</td>
+                    <td>1000개</td>
+                </tr>
+                </tfoot>
+        </thead>
+        </table>
+    </body>
+</html>

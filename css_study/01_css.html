@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS 방식</title>
+        <!-- 우선순위 1.인라인, 2.내부, 3.외부 -->
+         
+        <!-- 외부 스타일 시트 연결방법 -->
+        <link rel="stylesheet" href="01_css.css" />
+
+        <!-- 내부 스타일은 선택자(p)가 필요 -->
+        <style>
+            /* 1. */
+            p {
+                font-size: 20px;
+                color: brown;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>인라인 스타일 방식</h1>
+        <!-- ;를 넣어줘야한다.  -->
+        <!-- groove, double, dotted, solid -->
+        <!-- radious는 굴곡 -->
+        <p style="color: blue; font-weight: 700; border: 10px double red; border-radius: 50px; padding: 20px">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum minus nisi fugit alias doloribus nobis similique. Consectetur blanditiis enim
+            quaerat quo repellat esse quasi ducimus molestias suscipit dolores? Doloribus, nostrum?
+        </p>
+        <hr />
+        <h1>내부 스타일 시트 방식</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus, blanditiis numquam atque reiciendis voluptatibus quaerat eos assumenda
+            explicabo, quia nemo alias vel aliquid incidunt commodi debitis quod odio minus.
+        </p>
+        <hr />
+        <h1>외부 스타일 시트 방식</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum ea atque saepe reprehenderit enim est repellendus veniam modi adipisci
+            deleniti! Obcaecati mollitia incidunt temporibus ducimus ullam qui tenetur molestias accusantium?
+        </p>
+    </body>
+</html>
