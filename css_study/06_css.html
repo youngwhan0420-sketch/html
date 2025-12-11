@@ -18,24 +18,77 @@
                 width: 150px;
                 height: 150px;
                 background-color: yellow;
+                position: relative; /* 안쪽 빨간 박스 배치 기준 */
             }
-            .box > div {
+
+            .inner {
                 width: 50px;
                 height: 50px;
                 background-color: red;
-                
+                position: absolute;
+            }
+
+            /* 위쪽 중앙 */
+            .top {
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            /* 오른쪽 중앙 */
+            .right {
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            /* 아래쪽 중앙 */
+            .bottom {
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            /* 왼쪽 중앙 */
+            .left {
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
             }
         </style>
     </head>
     <body>
         <div id="container">
-            <div id="#box1" class="box">
-                <div></div>
+            <div id="box1" class="box">
+                <div class="inner top"></div>
+                <div class="inner right"></div>
+                <div class="inner bottom"></div>
+                <div class="inner left"></div>
             </div>
-            <div id="#box2" class="box"></div>
-            <div id="#box3" class="box"></div>
-            <div id="#box4" class="box"></div>
-            <div id="#box5" class="box"></div>
+            <div id="box2" class="box">
+                <div class="inner top"></div>
+                <div class="inner right"></div>
+                <div class="inner bottom"></div>
+                <div class="inner left"></div>
+            </div>
+            <div id="box3" class="box">
+                <div class="inner top"></div>
+                <div class="inner right"></div>
+                <div class="inner bottom"></div>
+                <div class="inner left"></div>
+            </div>
+            <div id="box4" class="box">
+                <div class="inner top"></div>
+                <div class="inner right"></div>
+                <div class="inner bottom"></div>
+                <div class="inner left"></div>
+            </div>
+            <div id="box5" class="box">
+                <div class="inner top"></div>
+                <div class="inner right"></div>
+                <div class="inner bottom"></div>
+                <div class="inner left"></div>
+            </div>
         </div>
     </body>
 </html>

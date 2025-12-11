@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>display속성</title>
+        <style>
+            span {
+                /* 블록체인으로 바껴서 블록태그처럼 사용가능 그래서 가로 세로 넓이 지정 가능 */
+                display: bolck;
+
+                /* inline 속성을 가지면서 block 속성도 가지게 된다. */
+                display: inline-block;
+            }
+
+            div {
+                display: inline;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- inline태크 : 옆으로 쌓인다. 한줄 다쓰지 않는다.-->
+        <!-- 줄바꿈 x, width, height 지정 x -->
+        <span>span태그</span>
+        <a href="">a 태그</a>
+        <img src="" alt="" />
+        <hr />
+        <!-- bolck : 밑으로 쌓인다. 한줄을 다 사용하고 개행되서 다음 태그가 나온다.-->
+        <div>div 태그</div>
+        <p>p 태그</p>
+        <h1>h 태그</h1>
+        <form action="">form 태그</form>
+    </body>
+</html>
