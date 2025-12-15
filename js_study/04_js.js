@@ -52,10 +52,33 @@ console.log(foundName);
 console.log(names.find((name) => name === "유노윤호"));
 
 const students = [
-    {name: "배찬익", age: 23},
-    {name: "  박윤호", age: 6},
-    {name: "정희원", age: 14},
-    {name: "심재원", age: 17},
-]
+    { name: "배찬익", age: 23 },
+    { name: "  박윤호", age: 6 },
+    { name: "정희원", age: 14 },
+    { name: "심재원", age: 17 },
+];
 
-console.log(students.find((student) => student.name === "박윤호" && student.age === 6))
+console.log(students.find((student) => student.name === "박윤호" && student.age === 6));
+
+// 중간에 빠니찬익으로 바꿨기 때문에 false가 뜬다.
+console.log(names.includes("배찬익"));
+
+const numbers = [1, 2, 3, 4, 5];
+// 짝수만 가져와라
+console.log(numbers.filter((n) => n % 2 === 0));
+
+console.log(students.filter((student) => student.age === 6));
+
+console.log(numbers.map((n) => n * 10));
+
+// age가 17인 사람의 name만 반환하고 싶을 경우
+console.log(
+    students.map((student) => {
+        if (student.age === 18) {
+            return {
+                name: student.name,
+            };
+        }
+        return student;
+    })
+);

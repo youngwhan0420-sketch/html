@@ -28,7 +28,7 @@ const fx1 = () => console.log("fx1 호출");
 // 한줄이기 때문에 console에 {}생략
 
 // 1번에 해당하는 것
-const fx2 = (n) => console.log(n);
+const fx2 = n => console.log(n);
 // 이렇게 생략 가능
 // const fx2 = n => console.log(n);
 const fx3 = (n) => n + 1;
