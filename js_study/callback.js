@@ -37,7 +37,7 @@ function checkout(cardNumber, product, callback) {
 }
 login("김영환", (username) => {
     console.log(`${username}님이 로그인했습니다.`);
-    addToCart("닌텐도", (product) => {
+    addToCart("닌텐도", (product) => {  // 첫번 째 인자 = 닌텐도, () => { } 콜백함수
         console.log(`${product}가 장바구니에 추가되었습니다.`);
         checkout("9429-02-0006-7884", product, (cardNumber, product) => {
             console.log(

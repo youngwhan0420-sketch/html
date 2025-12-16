@@ -12,13 +12,13 @@
 // 3. 거부(rejected): 비동기 작업이 실패한 상태
 // result:실패한 이유 (에러 객체)
 
-// promise의 인자로 함수를 전달 하는데 이걸 excute라 하고
+// promise의 인자로 함수를 전달 하는데 이걸 excutor를 전달
 // 객체 생성과 동시에 즉시 실행
 // resolve는 비동기 작업이 성공했을 때 호출하는 함수
 // reject는 비동기 작업이 실패했을 때 호출하는 함수
 function getData() {
     const promise = new Promise((resolve, reject) => {
-        // promise는 객체 생성되면 바로 실행한다. excute인
+        // promise는 객체 생성되면 바로 실행한다.
         // 비동기 작업을 넣어야하니
         setTimeout(() => {
             const data = { name: "김영환" };
